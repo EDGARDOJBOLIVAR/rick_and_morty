@@ -1,9 +1,6 @@
 <template>
     <div class="filter">
-        <div class="item" @click="filter('')">All</div>
-        <div class="item" @click="filter('Alive')">Alive</div>
-        <div class="item" @click="filter('Dead')">Dead</div>
-        <div class="item" @click="filter('unknown')">Unknown</div>
+        <div class="item" v-for="item in Filters" @click="filter(item.value)">{{item.name}}</div>
     </div>
 </template>
 
@@ -13,12 +10,19 @@ import { useStore } from "vuex";
 export default{
     setup(){
         const store = useStore();
+        const Filters = [
+            {name: 'All', value: ''},
+            {name: 'Alive', value: 'Alive'},
+            {name: 'Dead', value: 'Dead'},
+            {name: 'Unknown', value: 'unknown'}
+        ]
 
         const filter = ((status) =>{
             store.dispatch('filterByStatus', status)
         })
         return {
-            filter
+            filter,
+            Filters
         }
     }
 
