@@ -11,10 +11,10 @@ export default{
     setup(){
         const store = useStore();
         const Filters = [
-            // {name: 'All', value: ''},
-            // {name: 'Alive', value: 'Alive'},
-            // {name: 'Dead', value: 'Dead'},
-            // {name: 'Unknown', value: 'unknown'}
+            {name: 'All', value: ''},
+            {name: 'Alive', value: 'Alive'},
+            {name: 'Dead', value: 'Dead'},
+            {name: 'Unknown', value: 'unknown'}
         ]
 
         const filter = ((status) =>{
