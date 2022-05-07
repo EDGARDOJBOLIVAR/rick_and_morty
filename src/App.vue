@@ -1,8 +1,10 @@
 <template>
   <div class="container">
     <h1>Rick And Morty</h1>
-    <FilterByStatus />
-    <FilterByName />
+    <div class="row2">
+      <FilterByStatus />
+      <FilterByName />
+    </div>
     <ListCharacters />
   </div>
 </template>
@@ -51,5 +53,9 @@ h1{
 }
 img{
   width: 100%;
+}
+.row2{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 </style>

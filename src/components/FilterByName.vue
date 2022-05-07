@@ -26,8 +26,8 @@ export default {
 
 <style lang="scss">
 .search{
-    width: 400px;
-    margin: 3rem auto 0;
+    width: 450px;
+    margin: auto;
     input{
         height: 53px;
         width: 400px;
