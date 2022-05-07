@@ -1,8 +1,8 @@
 # rick_and_morty
 
-##
+## DEMO
 
-DEMO: https://rick-and-morty-edg.netlify.app/
+https://rick-and-morty-edg.netlify.app/
 
 ## Project setup
 
